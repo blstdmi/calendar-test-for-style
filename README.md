@@ -7,6 +7,6 @@ firefox <img width="406" height="353" alt="изображение" src="https://
 
 верстать свой.. или компонент..
 --
-  получить количество дней в месяце - new Date(2005, 1, 0).getDate();
+  получить количество дней в месяце - new Date(2005, 1, 0).getDate();<br>
   https://code-it-school.ru/blog/calendar-on-html-css-javascript/?ysclid=memnrtx067776805891 наброски просто календарь <img width="414" height="409" alt="изображение" src="https://github.com/user-attachments/assets/ecb9d433-a777-4b20-a84e-5f1e88690012" />
 
