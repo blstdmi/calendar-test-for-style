@@ -6,3 +6,4 @@ chrome <img width="338" height="326" alt="изображение" src="https://g
 firefox <img width="406" height="353" alt="изображение" src="https://github.com/user-attachments/assets/e480a70c-1a5a-4c9a-b0a4-8c5425cdc296" />
 
 верстать свой.. или компонент..
+https://code-it-school.ru/blog/calendar-on-html-css-javascript/?ysclid=memnrtx067776805891 наброски просто календарь 
