@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Календарь</title>
+ </head>
+ <body>
+  <form>
+   <p>Выберите дату: <input id="idCalendar" type="date" name="calendar">
+  <!--  <input type="submit" value="Отправить"></p> -->
+  </form>
+  <p id="idCalendarLog"></p>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let currentDate = new Date();
+        let selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay());
+        idCalendar.value = selectedDate.toISOString().split('T')[0];
+
+        idCalendar.addEventListener('input', function() {
+                console.log('input', `Текущее значение: ${this.value}`);
+                idCalendarLog.innerText = this.value;
+            });
+      })
+  </script>
+ </body>
+</html>
