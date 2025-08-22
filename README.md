@@ -6,5 +6,7 @@ chrome <img width="338" height="326" alt="изображение" src="https://g
 firefox <img width="406" height="353" alt="изображение" src="https://github.com/user-attachments/assets/e480a70c-1a5a-4c9a-b0a4-8c5425cdc296" />
 
 верстать свой.. или компонент..
-https://code-it-school.ru/blog/calendar-on-html-css-javascript/?ysclid=memnrtx067776805891 наброски просто календарь <img width="414" height="409" alt="изображение" src="https://github.com/user-attachments/assets/ecb9d433-a777-4b20-a84e-5f1e88690012" />
+--
+  получить количество дней в месяце - new Date(2005, 1, 0).getDate();
+  https://code-it-school.ru/blog/calendar-on-html-css-javascript/?ysclid=memnrtx067776805891 наброски просто календарь <img width="414" height="409" alt="изображение" src="https://github.com/user-attachments/assets/ecb9d433-a777-4b20-a84e-5f1e88690012" />
 
