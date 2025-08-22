@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
   <meta charset="utf-8">
   <title>Календарь</title>
  </head>
  <body>
   <form>
-   <p>Выберите дату: <input id="idCalendar" type="date" name="calendar">
+   <p>Выберите дату: <input id="idCalendar" type="date" name="calendar" lang="en">
   <!--  <input type="submit" value="Отправить"></p> -->
   </form>
   <p id="idCalendarLog"></p>
@@ -16,11 +16,57 @@
         let selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay());
         idCalendar.value = selectedDate.toISOString().split('T')[0];
 
+        //idCalendar.showPicker();//HTMLInputElement::showPicker() requires a user gesture.
+
         idCalendar.addEventListener('input', function() {
                 console.log('input', `Текущее значение: ${this.value}`);
                 idCalendarLog.innerText = this.value;
             });
       })
   </script>
+  <style>
+    input[type='date'] {
+    background: seagreen;
+    color: white;
+    font-family: Arial;
+}
+/* тест календарь стили.. */
+/* *  {
+    background: red;
+    color: red;
+}  */
+  </style>
  </body>
 </html>
+
+
+<!-- const button = document.querySelector("button");
+const browserInput = document.querySelector("input");
+
+button.addEventListener("click", () => {
+  try {
+    browserInput.showPicker();
+  } catch (error) {
+    // Fall back to another picker mechanism
+  }
+}); 
+
+// Фокус + клик (работает в большинстве браузеров)
+function showCalendarFallback(input) {
+    input.focus();
+    // Некоторые браузеры показывают календарь при фокусе
+    // или можно симулировать клик
+    if (typeof input.click === 'function') {
+        input.click();
+    }
+}
+-->
+
+<!-- выжимка
+
+      https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in?ysclid=memk6kvczx194978005
+     https://github.com/codeclown/native-datepicker
+     https://github.com/codeclown/native-datepicker/blob/master/example.html
+     https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/showPicker
+     https://github.com/chromium/chromium/blob/e7ad60a5304c2196e0123dcd7cee0804f7f317b1/third_party/blink/renderer/core/html/resources/html.css#L1294-L1322
+-->
